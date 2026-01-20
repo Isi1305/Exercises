@@ -1,3 +1,5 @@
+# Exercises by my professor from the respository iubh/DLBDSIPWP01_D
+
 age = 41
 height = 1.85
 weight = 78
