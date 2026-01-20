@@ -10,3 +10,9 @@ def bmi():
     bmi = int(bmi)
     print(f"{vorname}'s BMI ist {bmi}!")
 bmi()
+
+students = [
+    {"Matrikelnummer": "92901145", "Studiengang": "Applied AI", "Semester": "1. Semester"},
+    {"Matrikelnummer": "69343291", "Studiengang": "Cyber Security", "Semester": "2. Semester"}
+]
+students[0]["Studiengang"]
