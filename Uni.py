@@ -18,3 +18,27 @@ students = [
     {"Matrikelnummer": "69343291", "Studiengang": "Cyber Security", "Semester": "2. Semester"}
 ]
 students[0]["Studiengang"]
+
+def concat(vorname = "Vorname", nachname = "Nachname"):
+    return vorname + " " + nachname, len(vorname), len(nachname)
+result = concat("Peter", "Müller")
+print(result)
+print(concat("Peter"))
+print(concat(nachname = "Müller"))
+
+def calc_bmi(weight, height):
+    return weight / height**2
+
+# Debugging
+def calc_bmi(weight, height):
+    return weight / height**2
+
+filename = input("Bitte geben Sie einen Dateinamen ein: ")
+file = open(filename,"r")
+
+for line in file
+    line = line.strip()
+    items = line.split(" ")
+    bmi = calc_bmi(float(items[2]), float(items[3]))
+    print(items[1], "hat einen BMI von ungefähr:", int(bmi))
+file.close()
