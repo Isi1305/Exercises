@@ -1,11 +1,14 @@
 # Exercises by my professor from the respository iubh/DLBDSIPWP01_D
 
+
+# Berechne den Body Mass Index (BMI) aus den vorgegebenen Variablen und gebe diesen als Ganzzahl mit einer Erklärung aus,
+# die den Vornamen der Person enthält. Der BMI kann berechnet werden, indem das Gewicht durch die quadrierte Größe 
+# geteilt wird.
 age = 41
 height = 1.85
 weight = 78
 name = "Müller, Peter"
 vorname = name.split(",") [1].strip()
-
 
 def bmi():
     """Rechnet den BMI aus"""
@@ -15,6 +18,11 @@ def bmi():
 bmi()
 
 
+# Es geht um die Verwaltung der Studierenden im Python-Kurs: Speichere die (aktuell zwei unten gegebenen) 
+# Studierenden mit ihren Matrikelnummern, ihren Studiengängen und den aktuellen Semestern in einer Variablen. 
+# Wähle dazu geeignete Datentypen. Zeige beispielhaft auch den Zugriff auf den Studiengang der ersten Person.
+92901145, Applied AI, 1. Semester
+69343291, Cyber Security, 2. Semester
 students = [
     {"Matrikelnummer": "92901145", "Studiengang": "Applied AI", "Semester": "1. Semester"},
     {"Matrikelnummer": "69343291", "Studiengang": "Cyber Security", "Semester": "2. Semester"}
@@ -48,6 +56,11 @@ for line in file
 file.close()
 
 
+# Lies die Datei Lektion_6_Daten.csv in einen DataFrame ein. Die Datei enthält x- und y-Werte mit f(x)=y (d.h. y enthält die Funktionswerte für x)
+# Gib die ersten fünf Zeilen des DataFrame aus. Gib dann die ersten zehn Zeilen aus.
+# Extrahiere die x- und y-Werte aus dem DataFrame. Dazu kann die Funktion loc verwendet werden.
+# Interpoliere die Daten mit einer geeigneten Schrittweite.
+# Plotte die eingelesenen und interpolierten Daten.
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
