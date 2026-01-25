@@ -88,14 +88,13 @@ plt.show()
 
 
 # Aufgabe A (for-Schleife, if-Anweisung)
-# Erzeuge eine Liste der Zahlen von 0 bis 10. Iteriere über diese Liste und füge die Quadrate der geraden Zahlen 
-# in ein Set ein. Gib das Set aus.
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 my_set = {n*n for n in numbers if n % 2 == 0}
 print(my_set)
 
 # Aufgabe B (Comprehension)
-# Löse Aufgabe A mittels einer Comprehension. Füge jedoch die geraden Zahlen selbst, nicht die Quadrate, 
-# in das Set ein.
 my_set_2 = {n for n in numbers if n % 2 == 0}
 print(my_set_2)
+
+# Aufgabe C (while-Schleife, if-Anweisung)
+
