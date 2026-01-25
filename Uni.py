@@ -97,4 +97,10 @@ my_set_2 = {n for n in numbers if n % 2 == 0}
 print(my_set_2)
 
 # Aufgabe C (while-Schleife, if-Anweisung)
-
+a = b = None
+while a == b:
+    a, b = map(int, input("Gib zwei verschiedene Zahlen ein: ").split())
+    if a > b:
+        print(a)
+    else:
+        print(b)
