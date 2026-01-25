@@ -86,7 +86,7 @@ plt.legend()
 plt.show()
 
 
-
+# [ ERGEBNIS for name in names if BEDINGUNG ]
 # Aufgabe A (for-Schleife, if-Anweisung)
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 my_set = {n*n for n in numbers if n % 2 == 0}
@@ -106,3 +106,8 @@ while a == b:
         print(b)
 
 # Aufgabe D (Comprehension mit Strings)
+names = ["Bernd","Martina","Thorsten","Franka","Luise"]
+names_short = [f"{name} (short)" for name in names if len(name) <= 6]
+names_long = [f"{name} (long)"for name in names if len(name) >= 6]
+print(names_short)
+print(names_long)
