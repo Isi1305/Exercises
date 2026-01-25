@@ -21,8 +21,8 @@ bmi()
 # Es geht um die Verwaltung der Studierenden im Python-Kurs: Speichere die (aktuell zwei unten gegebenen) 
 # Studierenden mit ihren Matrikelnummern, ihren Studiengängen und den aktuellen Semestern in einer Variablen. 
 # Wähle dazu geeignete Datentypen. Zeige beispielhaft auch den Zugriff auf den Studiengang der ersten Person.
-92901145, Applied AI, 1. Semester
-69343291, Cyber Security, 2. Semester
+# 92901145, Applied AI, 1. Semester
+# 69343291, Cyber Security, 2. Semester
 students = [
     {"Matrikelnummer": "92901145", "Studiengang": "Applied AI", "Semester": "1. Semester"},
     {"Matrikelnummer": "69343291", "Studiengang": "Cyber Security", "Semester": "2. Semester"}
@@ -30,6 +30,7 @@ students = [
 students[0]["Studiengang"]
 
 
+# 
 def concat(vorname = "Vorname", nachname = "Nachname"):
     return vorname + " " + nachname, len(vorname), len(nachname)
 result = concat("Peter", "Müller")
@@ -85,3 +86,16 @@ plt.legend()
 plt.show()
 
 
+
+# Aufgabe A (for-Schleife, if-Anweisung)
+# Erzeuge eine Liste der Zahlen von 0 bis 10. Iteriere über diese Liste und füge die Quadrate der geraden Zahlen 
+# in ein Set ein. Gib das Set aus.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_set = {n*n for n in numbers if n % 2 == 0}
+print(my_set)
+
+# Aufgabe B (Comprehension)
+# Löse Aufgabe A mittels einer Comprehension. Füge jedoch die geraden Zahlen selbst, nicht die Quadrate, 
+# in das Set ein.
+my_set_2 = {n for n in numbers if n % 2 == 0}
+print(my_set_2)
