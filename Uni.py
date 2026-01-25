@@ -104,3 +104,5 @@ while a == b:
         print(a)
     else:
         print(b)
+
+# Aufgabe D (Comprehension mit Strings)
